@@ -12,12 +12,13 @@
     "url": "https://github.com/supabase/supabase-js/issues"
   },
   "license": "MIT",
+  "main": "dist/main/index.js",
+  "miniprogram": "dist",
   "author": "Supabase",
   "files": [
     "dist",
     "src"
   ],
-  "main": "dist/main/index.js",
   "module": "dist/module/index.js",
   "types": "dist/module/index.d.ts",
   "sideEffects": false,

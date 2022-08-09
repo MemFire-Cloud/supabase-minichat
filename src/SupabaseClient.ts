@@ -143,13 +143,6 @@ export default class SupabaseClient {
     return rest.rpc<T>(fn, params, { head, count })
   }
 
-
-
- 
-
-
-
-
   private _initSupabaseAuthClient({
     autoRefreshToken,
     persistSession,
@@ -176,7 +169,6 @@ export default class SupabaseClient {
       multiTab,
     })
   }
-
 
   private _initPostgRESTClient() {
     return new PostgrestClient(this.restUrl, {

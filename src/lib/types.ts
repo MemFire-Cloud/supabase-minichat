@@ -38,7 +38,6 @@ export type SupabaseClientOptions = {
    */
   localStorage?: SupabaseAuthClientOptions['localStorage']
 
-
   /**
    * A custom `fetch` implementation.
    */

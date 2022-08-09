@@ -27,6 +27,4 @@ export class SupabaseQueryBuilder<T> extends PostgrestQueryBuilder<T> {
     this._schema = schema
     this._table = table
   }
-
-
 }
