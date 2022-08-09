@@ -1,4 +1,4 @@
-# `supabase-js`
+# `supabase-minichat`
 
 An isomorphic JavaScript client for Supabase.
 
@@ -10,13 +10,13 @@ An isomorphic JavaScript client for Supabase.
 First of all, you need to install the library:
 
 ```sh
-npm install @supabase/supabase-js
+npm install supabase-minichat
 ```
 
 Then you're able to import the library and establish the connection with the database:
 
 ```js
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from 'supabase-minichat'
 
 // Create a single supabase client for interacting with your database
 const supabase = createClient('https://xyzcompany.supabase.co', 'public-anon-key')
