@@ -1,15 +1,19 @@
 {
   "name": "supabase-minichat",
-  "version": "0.0.6",
-  "description": "Isomorphic Javascript client for Supabase-minichat",
+  "version": "0.1.1",
+  "description": "Isomorphic Javascript client for Supabase",
   "keywords": [
     "javascript",
     "typescript",
     "supabase"
   ],
-  "homepage": "https://github.com/MemFire-Cloud/supabase-minichat",
+  "homepage": "https://github.com/supabase/supabase-js",
+  "bugs": {
+    "url": "https://github.com/supabase/supabase-js/issues"
+  },
   "license": "MIT",
   "main": "index.js",
+  "miniprogram": "./dist/main",
   "author": "Supabase",
   "files": [
     "dist",
@@ -20,7 +24,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MemFire-Cloud/supabase-minichat.git"
+    "url": "git+https://github.com/supabase/supabase-js.git"
   },
   "scripts": {
     "clean": "rimraf dist docs",
@@ -30,7 +34,7 @@
     "build:main": "tsc -p tsconfig.json",
     "build:module": "tsc -p tsconfig.module.json",
     "build:umd": "webpack",
-    "types-generate": "dts-gen -m 'supabase-minichat' -s",
+    "types-generate": "dts-gen -m '@supabase/supabase-js' -s",
     "test": "jest --runInBand",
     "test:db": "cd infra/db && docker-compose down && docker-compose up -d && sleep 5",
     "test:watch": "jest --watch --verbose false --silent false",
